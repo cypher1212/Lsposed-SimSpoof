@@ -10,6 +10,10 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    - name: Setup Gradle (compatible version)
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        gradle-version: 7.5.1
     - name: Build with Gradle
       run: gradle assembleDebug
     - name: Upload APK
