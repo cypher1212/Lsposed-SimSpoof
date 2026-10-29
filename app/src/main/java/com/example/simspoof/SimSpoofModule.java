@@ -24,21 +24,21 @@ public class SimSpoofModule implements IXposedHookLoadPackage {
     private static final String TAG = "SimSpoof";
     
     // Configuration - modify these values as needed
-    private static final String SPOOFED_ICCID = "89860123456789012345";
-    private static final String SPOOFED_IMSI = "310260123456789";
-    private static final String SPOOFED_PHONE_NUMBER = "+1234567890";
-    private static final String SPOOFED_LINE1_NUMBER = "1234567890";
-    private static final String SPOOFED_SUBSCRIBER_NUMBER = "1234567890";
+    private static final String SPOOFED_ICCID = "89860123456786745345";
+    private static final String SPOOFED_IMSI = "310260512356789";
+    private static final String SPOOFED_PHONE_NUMBER = "+917481536975";
+    private static final String SPOOFED_LINE1_NUMBER = "7481536975";
+    private static final String SPOOFED_SUBSCRIBER_NUMBER = "7809512380";
     private static final String SPOOFED_VOICE_MAIL_NUMBER = "123";
     
     // Country and Network Information
-    private static final String SPOOFED_COUNTRY_ISO = "US";
-    private static final String SPOOFED_NETWORK_COUNTRY_ISO = "US";
-    private static final String SPOOFED_SIM_COUNTRY_ISO = "US";
+    private static final String SPOOFED_COUNTRY_ISO = "IN";
+    private static final String SPOOFED_NETWORK_COUNTRY_ISO = "IN";
+    private static final String SPOOFED_SIM_COUNTRY_ISO = "IN";
     private static final String SPOOFED_NETWORK_OPERATOR = "310260";  // T-Mobile US
-    private static final String SPOOFED_NETWORK_OPERATOR_NAME = "T-Mobile";
+    private static final String SPOOFED_NETWORK_OPERATOR_NAME = "JIO";
     private static final String SPOOFED_SIM_OPERATOR = "310260";
-    private static final String SPOOFED_SIM_OPERATOR_NAME = "T-Mobile";
+    private static final String SPOOFED_SIM_OPERATOR_NAME = "JIO";
     
     // Device Identifiers
     private static final String SPOOFED_DEVICE_ID = "123456789012345";  // IMEI
