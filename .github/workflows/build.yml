@@ -19,8 +19,11 @@ jobs:
         sed -i '/dependencyResolutionManagement/,/^}/ s/^/\/\//' settings.gradle
     - name: Fix Xposed dependency repository
       run: |
-        # Inject the Xposed Maven repository into the allprojects block
         sed -i '/allprojects {/a\    repositories {\n        maven { url "https://api.xposed.info/" }\n    }' build.gradle
+    - name: Fix missing launcher icon
+      run: |
+        sed -i '/android:icon="@mipmap/d' app/src/main/AndroidManifest.xml
+        sed -i '/android:roundIcon="@mipmap/d' app/src/main/AndroidManifest.xml
     - name: Build with Gradle
       run: gradle assembleDebug
     - name: Upload APK
